@@ -14,13 +14,13 @@ const Form = ({ todo, setTodo, todoList, setTodoList }) => {
     }
 
     return (
-        <div className={styles.todoform}>
-            <form onSubmit={handleSubmit}>
-                <input value={todo} onChange={handleChange} className={styles.todoinput} type="text" placeholder="Add todo item" />
-                <button type='submit' className={styles.todobutton}> ADD </button>
+        <div className = { styles.todoform} >
+            <form onSubmit={ handleSubmit }>
+                <input value={ todo } onChange={ handleChange } className={ styles.todoinput } type="text" placeholder="Add Todo" />
+                <button type='submit' className={ styles.todobutton }> ADD </button>
             </form>
         </div>
-    )
+    );
 }
 
 export default Form;

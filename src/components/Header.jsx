@@ -1,5 +1,5 @@
 /**
- * TODO: TITLE OF THE APP
+ *  TITLE OF THE APP
  *  */ 
 
 import styles from '../Style.module.css'
