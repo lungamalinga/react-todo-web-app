@@ -1,6 +1,6 @@
 
-
 import styles from '../Style.module.css'
+import shortid from 'shortid'
 
 const Form = ({ todo, setTodo, todoList, setTodoList }) => {
 
@@ -10,7 +10,12 @@ const Form = ({ todo, setTodo, todoList, setTodoList }) => {
 
     const handleSubmit = ( event ) => {
         event.preventDefault() // prevent page from reloading 
-        setTodoList( [...todoList, todo] ) // <- add to the array [NOTE: each item dont have id]
+        setTodoList( [...todoList, {
+            id: shortid.generate(),
+            name: todo
+        }]);
+
+        setTodo("") // empty the text field after submit
     }
 
     return (
