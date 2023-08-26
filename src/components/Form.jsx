@@ -9,7 +9,7 @@ const Form = ({ todo, setTodo, todoList, setTodoList }) => {
     }
 
     const handleSubmit = ( event ) => {
-        event.preventDefault() // prevent page from reloading 
+        event.preventDefault(); // prevent page from reloading 
         setTodoList( [...todoList, {
             id: shortid.generate(),
             name: todo
